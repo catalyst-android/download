@@ -36,7 +36,7 @@ const fetchBuilds = async (codename) => {
 
         return {
           ...build,
-          android: 11,
+          android: 13,
           size: humanSize(build.size),
           datetime: humanDate(build.datetime),
           md5: build.id,
