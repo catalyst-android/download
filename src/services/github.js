@@ -3,11 +3,11 @@ import request from "../helpers/request";
 import { fetchDownloadsCount } from "./sourceforge";
 import { humanDate, humanSize } from "../helpers/utils";
 
-const baseURL = "https://raw.githubusercontent.com/ProjectSakura";
+const baseURL = "https://raw.githubusercontent.com/catalyst-android";
 
 const fetchDevices = async () => {
   try {
-    const res = await request(`${baseURL}/OTA/11/devices.json`);
+    const res = await request(`${baseURL}/OTA/13/devices.json`);
     const brands = [];
     const devices = [];
 
@@ -28,7 +28,7 @@ const fetchDevices = async () => {
 
 const fetchBuilds = async (codename) => {
   try {
-    const res = await request(`${baseURL}/OTA/11/website/${codename}.json`);
+    const res = await request(`${baseURL}/OTA/13/website/${codename}.json`);
     const promises = res.response
       .map(async (build) => {
         const downloads = await fetchDownloadsCount(build.filename, codename);
@@ -106,7 +106,7 @@ const fetchChangelog10 = async (filename, codename) => {
 };
 const fetchROMChangelog = async () => {
   const res = await request(
-    "https://raw.githubusercontent.com/ProjectSakura/OTA/11/changelog/rom_changelog.txt",
+    "https://raw.githubusercontent.com/catalyst-android/OTA/13/changelog/rom_changelog.txt",
     false,
   );
   return res;

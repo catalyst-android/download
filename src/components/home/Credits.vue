@@ -3,11 +3,7 @@
     <div class="credits">
       Project maintained by
       <a href="https://github.com/LordShenron">LordShenron</a> and
-      <a href="https://github.com/ArunTeltia">Arun Teltia</a>
-    </div>
-    <div class="credits">
-      Sponsored by
-      <a href="">XSLTEL OU</a>
+      <a href="https://github.com/Umang96">Umang96</a>
     </div>
     <div class="container" style="width:100%">
       <center>
@@ -16,7 +12,7 @@
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script>
-        <!-- sakura-horizontal-unit-2 -->
+        <!-- catalyst-horizontal-unit-2 -->
         <ins
           class="adsbygoogle"
           style="display:block"
@@ -50,13 +46,8 @@ export default {
         },
         {
           title: "",
-          value: "Arun Teltia",
-          url: "https://github.com/ArunTeltia",
-        },
-        {
-          title: "Sponsored by ",
-          value: "XSLTEL OU",
-          url: "",
+          value: "Umang96",
+          url: "https://github.com/Umang96",
         },
       ],
     };

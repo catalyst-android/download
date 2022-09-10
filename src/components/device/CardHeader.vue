@@ -98,7 +98,7 @@ export default {
       if (device && device.name) {
         document.title = `${device.name} (${
           this.$route.params.codename
-        }) | Project Sakura Downloads`;
+        }) | CatalystOS Downloads`;
       }
 
       return device;

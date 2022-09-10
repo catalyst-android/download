@@ -1,7 +1,7 @@
 import request from "../helpers/request";
 import { getToday, getTimestamp } from "../helpers/utils";
 
-const baseURL = "https://sourceforge.net/projects/projectsakura";
+const baseURL = "https://sourceforge.net/projects/catalystproject";
 
 const fetchDownloadsCount = async (filename, codename) => {
   try {
@@ -15,7 +15,7 @@ const fetchDownloadsCount = async (filename, codename) => {
 };
 
 const generateDownloadURL = (filename, codename) => {
-  const downloadBase = `https://downloads.sourceforge.net/project/projectsakura/${codename}/${filename}`;
+  const downloadBase = `https://downloads.sourceforge.net/project/catalystproject/${codename}/${filename}`;
   return `${downloadBase}?r=&ts=${getTimestamp()}&use_mirror=autoselect`;
 };
 

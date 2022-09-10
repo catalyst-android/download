@@ -21,11 +21,10 @@ export default {
     ProjectLink,
     Credits,
     Logo,
-    Donate,
   },
   created() {
-    document.title = "Project Sakura | Downloads";
-    document.head.querySelector("meta[name=description]").content = "Project Sakura | Downloads";
+    document.title = "CatalystOS | Downloads";
+    document.head.querySelector("meta[name=description]").content = "CatalystOS | Downloads";
   },
   computed: {
     subname() {

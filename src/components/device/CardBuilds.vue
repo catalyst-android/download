@@ -45,7 +45,7 @@
               </div>
               <div class="buildbuttons">
                 <a
-                  href="https://projectsakura.xyz/blog/#/donation"
+                  href="null"
                   target="_blank"
                   class="btn"
                   >Donate To ROM</a
@@ -82,7 +82,7 @@ export default {
         this.$route.params.filename,
       );
       document.title = this.$route.params.filename
-        || `Download ProjectSakura for ${this.$route.params.codename}`;
+        || `Download CatalystOS for ${this.$route.params.codename}`;
     }
     this.openBuild(this.$store.state.expandedBuild);
     this.$store.dispatch("getIndexOfExpandedBuild", "");

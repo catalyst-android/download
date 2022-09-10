@@ -1,6 +1,6 @@
 export default {
-  APP_NAME: "Project Sakura | Downloads",
-  APP_SUBNAME: "Project Sakura ",
-  APP_DESC: "Project Sakura download page for official devices",
+  APP_NAME: "CatalystOS | Downloads",
+  APP_SUBNAME: "CatalystOS ",
+  APP_DESC: "CatalystOS download page for official devices",
   APP_LOGO: "/img/logo.png",
 };

@@ -1,4 +1,4 @@
-# Project Sakura Download Page
+# CatalystOS Download Page
 
 ## Project setup
 ```
