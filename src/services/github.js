@@ -82,7 +82,7 @@ const fetchBuilds = async (codename) => {
 const fetchChangelog = async (filename, codename) => {
   try {
     const res = await request(
-      `${baseURL}/OTA/11/changelog/changelog_${codename}.txt`,
+      `${baseURL}/OTA/13/changelog/changelog_${codename}.txt`,
       false,
     );
 
