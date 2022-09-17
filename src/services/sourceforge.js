@@ -15,8 +15,13 @@ const fetchDownloadsCount = async (filename, codename) => {
 };
 
 const generateDownloadURL = (filename, codename) => {
-  const downloadBase = `https://downloads.sourceforge.net/project/catalystproject/${codename}/${filename}`;
-  return `${downloadBase}?r=&ts=${getTimestamp()}&use_mirror=autoselect`;
+  if (codename === "munch" || codename === "alioth") {
+    const downloadBase = `https://sourceforge.net/projects/catalystproject/files/${codename}/`;
+    return `${downloadBase}`;
+  } else {
+    const downloadBase = `https://downloads.sourceforge.net/project/catalystproject/${codename}/${filename}`;
+    return `${downloadBase}?r=&ts=${getTimestamp()}&use_mirror=autoselect`;
+  }
 };
 
 export { fetchDownloadsCount, generateDownloadURL };
