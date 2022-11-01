@@ -42,6 +42,8 @@ export default {
           "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/flag-oman_1f1f4-1f1f2.png",
         VN:
           "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/flag-vietnam_1f1fb-1f1f3.png",
+        NEP:
+          "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/322/flag-nepal_1f1f3-1f1f5.png",
       };
 
       if (flags[this.country]) {
