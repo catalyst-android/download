@@ -15,7 +15,7 @@ const fetchDownloadsCount = async (filename, codename) => {
 };
 
 const generateDownloadURL = (filename, codename) => {
-  if (codename === "munch" || codename === "alioth") {
+  if (codename === "munch") {
     const downloadBase = `https://sourceforge.net/projects/catalystproject/files/${codename}/`;
     return `${downloadBase}`;
   } else {
